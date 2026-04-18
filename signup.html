@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header> 
+    <a href="#" class="logo">
+        <img src="Fight Hunger.png" alt="My Brand Logo">
+    </a>
+</header>
+
+<main>
+<h2>Join the Fight Against Hunger</h2>
+
+<form onsubmit="return validateForm()">
+
+<!-- PERSONAL INFO -->
+<h3>Personal Information</h3>
+
+<label>Full Name:</label>
+<input type="text" id="fullName" onblur="validateForm()">
+<span id="nameError"></span><br>
+
+<label>Birthdate:</label>
+<input type="date" id="birthdate">
+<span id="birthError"></span><br>
+
+<label>Sex:</label>
+<input type="radio" name="sex" value="male"> Male
+<input type="radio" name="sex" value="female"> Female
+<span id="sexError"></span><br>
+
+<label>Email:</label>
+<input type="email" id="email">
+<span id="emailError"></span><br>
+
+<!-- ACCOUNT -->
+<h3>Account Details</h3>
+
+<label>Username:</label>
+<input type="text" id="username">
+<span id="userError"></span><br>
+
+<label>Password:</label>
+<input type="password" id="password">
+<span id="passError"></span><br>
+
+<label>Confirm Password:</label>
+<input type="password" id="confirmPassword">
+<span id="confirmError"></span><br>
+
+<!-- TOPIC QUESTIONS -->
+<h3>Your Interests</h3>
+
+<label>How do you want to help?</label>
+<select id="helpType">
+    <option value="">-- choose --</option>
+    <option value="donate">Donate</option>
+    <option value="volunteer">Volunteer</option>
+    <option value="spread">Spread Awareness</option>
+</select>
+<span id="selectError"></span><br>
+
+<label>What causes do you support?</label><br>
+<input type="checkbox" name="causes" value="children"> Children<br>
+<input type="checkbox" name="causes" value="poverty"> Poverty<br>
+<input type="checkbox" name="causes" value="education"> Education<br>
+<span id="checkError"></span><br>
+
+<label>How often do you want to participate?</label><br>
+<input type="radio" name="frequency" value="weekly"> Weekly
+<input type="radio" name="frequency" value="monthly"> Monthly
+<input type="radio" name="frequency" value="rarely"> Rarely
+<span id="freqError"></span><br>
+
+<br>
+<button type="submit">Join Us and Fight Hunger!</button>
+
+<p id="successMsg"></p>
+
+</form>
+
+<br>
+<a href="https://gabrielubas.github.io/Ubas-FINAL-PROJECTV2/index.html">Back to Homepage</a>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 My Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* =========================
+   HEADER (from your spec)
+========================= */
+header { 
+    background-color: white; 
+    color: white; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    gap: 30px;
+}
+
+.logo img{
+    height: 100px; /* Adjust this height to control the size */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    color: #06402b;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #06402b;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* RADIO + CHECKBOX spacing */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* ERROR MESSAGES */
+span {
+    color: red;
+    font-size: 12px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #06402b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a5c3d;
+}
+
+/* SUCCESS MESSAGE */
+#successMsg {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* =========================
+   FOOTER (from your spec)
+========================= */
+footer {
+    background-color: #06402b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    width: 100%;
+}
